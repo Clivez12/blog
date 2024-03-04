@@ -38,7 +38,13 @@
     .justify-content-md-center{
         justify-content: center !important;
     }
-    
+    .nav-toggle{
+        visibility: hidden;
+    }
+    .collapse-menu{
+        visibility: visible !important;
+    }
+
 }
   
 @media only screen and (min-width: 768px) {
@@ -84,6 +90,7 @@ nav ul{
 }
 nav ul a{
     color: var(--grey);
+    margin-right: 6px;
 }
 nav ul a:hover{
     color: var(--black);
@@ -98,6 +105,9 @@ nav ul{
     position: fixed;
     z-index: 2;
     left: 95%;
+    margin-top: 10px;
+    align-self: flex-start;
+    align-items: start;
 }
 #form-search input{
     border: 1px solid var(--nav-blue);
@@ -115,4 +125,11 @@ nav ul{
 }
 #form-search button:hover{
     background-color: var(--light-nav-blue);
+}
+.collapse-menu{
+    visibility: collapse;
+    /*transition: .5s visibility ease-in-out;*/
+}
+.visible{
+    visibility: visible !important;
 }
